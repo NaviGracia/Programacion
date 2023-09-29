@@ -1,4 +1,4 @@
-public class ejercicio1 {
+public class ejercicio2 {
     public static void main(String[] args) throws Exception {
         int n = 7;
         double a = 3.4;
