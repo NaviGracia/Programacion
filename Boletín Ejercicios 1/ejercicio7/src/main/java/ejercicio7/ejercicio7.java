@@ -2,7 +2,7 @@ package ejercicio7;
 
 public class ejercicio7 {
     public static void main(String[] args) {
-        int c = 150;
+        int c = -63;
         int par = c%2;
         int multiplo5 = c%5;
         int multiplo10 = c%10;
