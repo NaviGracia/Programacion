@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class ejercicio8 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Introduzca los valores a y b");
-        Scanner a = new Scanner (System.in);
-        int b = System.in.read();
-        System.out.println("Los números son" + a + " y " + b);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("El valor a = " + a + " y b = " + b);
     }
 }
