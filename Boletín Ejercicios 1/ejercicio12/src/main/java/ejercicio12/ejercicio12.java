@@ -2,7 +2,7 @@ package ejercicio12;
 
 import java.util.Scanner;
 
-public class Main {
+public class ejercicio12 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         System.out.println("Introduzca el radio de la circunferencia");
