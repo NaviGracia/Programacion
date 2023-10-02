@@ -10,6 +10,6 @@ public class ejercicio16 {
         int n = sc.nextInt();
         System.out.println("Primera cifra de " + n + " es " + (n/100));
         System.out.println("Cifra central de " + n + " es " + (n/10)%10);
-        System.out.println("Primera cifra de " + n + " es " + (n%10));
+        System.out.println("Última cifra de " + n + " es " + (n%10));
     }
 }
