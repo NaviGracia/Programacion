@@ -10,8 +10,8 @@ public class ejercicio17 {
         int n = sc.nextInt();
         System.out.println("Primera cifra de " + n + " es " + (n/10000));
         System.out.println("Segunda cifra de " + n + " es " + (n/1000)%10);
-        System.out.println("Tercera central de " + n + " es " + (n/100)%10);
-        System.out.println("Cuarta central de " + n + " es " + (n/10)%10);
+        System.out.println("Tercera cifra de " + n + " es " + (n/100)%10);
+        System.out.println("Cuarta cifra de " + n + " es " + (n/10)%10);
         System.out.println("Quinta cifra de " + n + " es " + (n%10));
     }
 }
