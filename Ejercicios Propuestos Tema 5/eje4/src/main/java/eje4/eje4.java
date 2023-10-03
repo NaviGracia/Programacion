@@ -5,6 +5,7 @@ public class eje4 {
         int num = Integer.parseInt(args[0]);
         switch (num){
             case 1: System.out.println("Enero");
+            break;
             case 2: System.out.println("Febrero");
             case 3: System.out.println("Marzo");
             case 4: System.out.println("Abril");
