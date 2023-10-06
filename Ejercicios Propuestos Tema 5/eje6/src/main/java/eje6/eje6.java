@@ -8,7 +8,7 @@ public class Main {
         String ale ="";
         while(!ale.equals("FIN")){
             System.out.println("Introduzca la información para acabar el bucle");
-            ale = ale + sc.nextLine();
+            ale = sc.nextLine();
         } 
     }
 }
