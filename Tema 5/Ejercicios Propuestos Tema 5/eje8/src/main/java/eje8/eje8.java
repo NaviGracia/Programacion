@@ -1,6 +1,6 @@
 package eje8;
 
-public class Main {
+public class eje8 {
     public static void main(String[] args) {
         System.out.println("Introduzca un texto: ");
         /*Muestra mensaje al usuario */
