@@ -54,20 +54,21 @@ public class eje2 {
             cont++;
             media = media + x;
 
-            System.out.println("Quiere introducir algún Nº más?");
+            System.out.println("Quiere introducir algún Nº más? (Introduzca 'no' para finalizar)");
             sc.nextLine();
             confirmacion = sc.nextLine();
         } while(!confirmacion.equals("no"));
         media = media/cont;
-        System.out.println("terminado");
-        System.out.println(media);
-        System.out.println(mayor);
-        System.out.println(menor);
-        System.out.println(sumapo);
-        System.out.println(sumane);
-        System.out.println(sumapar);
-        System.out.println();
-        System.out.println();
-        System.out.println(canimp);
+        System.out.println("El mayor Nº es: " + mayor);
+        System.out.println("El menor Nº es: " + menor);
+        System.out.println("La cantidad de Nº positivos es: " + canpo);
+        System.out.println("La suma de los Nº positivos es: " + sumapo);
+        System.out.println("La cantidad de Nº negativos es: " + canne);
+        System.out.println("La suma de los Nº negativos es: " + sumane);
+        System.out.println("La cantidad de Nº pares es: " + canpar);
+        System.out.println("La suma de los Nº pares es: " + sumapar);
+        System.out.println("La cantidad de Nº impares es: " + canimp);
+        System.out.println("La suma de los Nº impares es: " + sumaimp);
+       System.out.println("La media de todos los Nº es: " + media);
     }
 }
