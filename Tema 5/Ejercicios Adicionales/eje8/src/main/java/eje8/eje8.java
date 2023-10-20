@@ -11,10 +11,10 @@ public class eje8 {
         int mes = sc.nextInt();
         System.out.println("Introduzca el año: ");
         int año = sc.nextInt();
-        if (año<=0){
+        if (año>0){
             switch(mes){
                 case 1: if((dia>0)&&(dia<=31)){
-                    System.out.println("La fecha " + dia + "/" + mes + "/" + año + "es correcta.");
+                    System.out.println("La fecha " + dia + "/" + mes + "/" + año + " es correcta.");
                 } else{
                     System.out.println("Fecha Incorrecta.");
                 }
@@ -22,30 +22,30 @@ public class eje8 {
                 case 2: 
                     if((mes%4==0)&&(mes%100!=0)||(mes%400==0)){
                         if((dia>0)&&(dia<=29)){
-                            System.out.println("La fecha " + dia + "/" + mes + "/" + año + "es correcta.");
+                            System.out.println("La fecha " + dia + "/" + mes + "/" + año + " es correcta.");
                         } else{
                             System.out.println("Fecha Incorrecta.");
                         }
                     } if((dia>0)&&(dia<=28)){
-                            System.out.println("La fecha " + dia + "/" + mes + "/" + año + "es correcta.");
+                            System.out.println("La fecha " + dia + "/" + mes + "/" + año + " es correcta.");
                         } else{
                             System.out.println("Fecha Incorrecta.");
                         }
                 break;
                 case 3: if((dia>0)&&(dia<=31)){
-                    System.out.println("La fecha " + dia + "/" + mes + "/" + año + "es correcta.");
+                    System.out.println("La fecha " + dia + "/" + mes + "/" + año + " es correcta.");
                 } else{
                     System.out.println("Fecha Incorrecta.");
                 }
                 break;
                 case 4: if((dia>0)&&(dia<=30)){
-                    System.out.println("La fecha " + dia + "/" + mes + "/" + año + "es correcta.");
+                    System.out.println("La fecha " + dia + "/" + mes + "/" + año + " es correcta.");
                 } else{
                     System.out.println("Fecha Incorrecta.");
                 }
                 break;
                 case 5: if((dia>0)&&(dia<=31)){
-                    System.out.println("La fecha " + dia + "/" + mes + "/" + año + "es correcta.");
+                    System.out.println("La fecha " + dia + "/" + mes + "/" + año + " es correcta.");
                 } else{
                     System.out.println("Fecha Incorrecta.");
                 }
