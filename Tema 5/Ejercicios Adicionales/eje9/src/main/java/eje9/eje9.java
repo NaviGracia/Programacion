@@ -8,7 +8,6 @@ public class eje9 {
         System.out.println("Ingrese un Nº:");
         int x = sc.nextInt();
         for(int y = 1; y<=x; y++){
-            for(int j = 1; j<=y; j++){
             System.out.print(y);
             }
         }
