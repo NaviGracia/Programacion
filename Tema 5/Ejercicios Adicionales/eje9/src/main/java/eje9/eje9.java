@@ -11,5 +11,4 @@ public class eje9 {
             System.out.print(y);
             }
         }
-    }
 }
