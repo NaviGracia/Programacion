@@ -7,8 +7,17 @@ public class eje9 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese un Nº:");
         int x = sc.nextInt();
+        int nSinSaltar = 0;
+        int nNecesariosParaSaltar = 1;
         for(int y = 1; y<=x; y++){
-            System.out.print(y);
+            if (nSinSaltar<nNecesariosParaSaltar){
+                System.out.print(y + " ");
+                nSinSaltar++;
+            } if(nSinSaltar==nNecesariosParaSaltar){
+                System.out.println("");
+                nSinSaltar=0;
+                nNecesariosParaSaltar++;
+            }
             }
         }
 }
