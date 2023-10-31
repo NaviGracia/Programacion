@@ -6,7 +6,7 @@ public class eje5 {
     public static int funcion (int linea, int columnas){
         if ((columnas==1)) {
             return 1;
-        } if ((columnas>1)&&(columnas%2==1)&&(columnas>)) {
+        } if ((columnas>1)&&(columnas%2==1)) {
             return 1;
         }if (linea==2) {
             return 1;
