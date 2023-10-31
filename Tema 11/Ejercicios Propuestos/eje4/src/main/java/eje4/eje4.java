@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class eje4 {
     public static int funcion (int linea, int columnas){
-        if ((linea==1)||(columnas==1)) {
+        if ((columnas==1)) {
             return 1;
-        } else{
-            int resultado = (funcion((linea - 1), columnas) + funcion(linea, (columnas - 1)));
+        } if ((columnas>1)&&(columnas==linea)) {
+            return 1;
+        }else{
+            int resultado = (funcion((linea - 1), (columnas-1)) + funcion((linea-1), columnas));
             return resultado;
         }
     }
@@ -18,12 +20,12 @@ public class eje4 {
         int columna;
         System.out.println("Introduzca el Nº:");
         int valorTotal = sc.nextInt();
-        for(linea = 1; linea<=valorTotal; linea++){
-            for(int j = 1; j<=valorTotal-linea; j++){
+        for (linea = 1; linea<=valorTotal; linea++) {
+            for(int j = valorTotal-linea; j>0; j--){
                 System.out.print(" ");
-            }        
-            for(columna = 1; columna<=j; columna++){
-                    System.out.print(eje4.funcion(linea, columna) + "\t");
+            }
+            for(columna=1; columna<=linea; columna++){
+                System.out.print(eje4.funcion(linea, columna) + " ");
             }
             System.out.println("");
         }
