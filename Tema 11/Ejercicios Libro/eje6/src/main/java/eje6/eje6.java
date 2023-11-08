@@ -4,13 +4,9 @@ public class eje6 {
     long multi (long [] vector1, int pos){
         if (pos<vector1.length) {
             return vector1[pos] * multi(vector1, pos+1);
-            //vector2(vector2.length-1);
-            
         }
         return 1;
-/* 
-        multiplicacion = multiplicacion * multi(vector1.length-1);
-        return multiplicacion;*/
+
     }
     public static void main(String[] args) {
         eje6 eje6 = new eje6();
