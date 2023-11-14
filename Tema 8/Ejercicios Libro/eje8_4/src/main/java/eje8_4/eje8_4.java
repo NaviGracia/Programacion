@@ -8,7 +8,6 @@ public class eje8_4 {
         for(int posicion = 0; posicion<args.length; posicion++){
             int cont = 0;
             for(int posicionComparacion = 0; posicionComparacion<posicion; posicionComparacion++){
-                
                 if (args[posicion].compareToIgnoreCase(args[posicionComparacion])==0) {
                     prueba=prueba++;
                 }else{
