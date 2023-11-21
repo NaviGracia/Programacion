@@ -43,7 +43,7 @@ public class eje6 {
         System.out.println(miNombre.trim());
         /*replace y substring en cad1 */
         System.out.println("Remplazando las e de Pepe por a");
-        cad1.substring(0, 4).replace("e", "a").concat(cad2);
+        cad1 = cad1.replace(cad1.substring(0, 4), "Papa");
         System.out.println(cad1);
         /*startsWith y endsWith */
         System.out.println("Probando startsWith y endsWith: ");
@@ -56,8 +56,10 @@ public class eje6 {
         System.out.println("Posición de la primera e: " + cad1.indexOf("e"));
         System.out.println("Posición de la primera a: " + cad1.indexOf("a"));
         System.out.println("Posición de la última a: " + cad1.lastIndexOf("a"));
-        /*Problemas:
-         * línea 45
-         */
+        /* Creando vector de cad1 */
+        cad1 = "Papa-Lionel";
+        String[] vector = cad1.split("-");
+        System.out.println("PapaLionel separado: " + vector[0] + " " + vector[1]);
+        
     }
 }
