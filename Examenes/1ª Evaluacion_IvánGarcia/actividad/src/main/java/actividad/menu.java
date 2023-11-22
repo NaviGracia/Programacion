@@ -60,12 +60,14 @@ public class menu {
             }
             /*No acabado lo anterior */
             switch(nElegido){
+                /*2.- B */
                 case 1: 
                     System.out.println("Ingrese un Nº positivo: ");
                     int num = sc.nextInt();
                     System.out.println("La suma de los múltiplos de 3 o 5 menores que " + num + " es: " + sumaEspecial(num));
                     cont1++;
                     break;
+                /*3.- M */
                 case 2:
                     String bin1, bin2; 
                      /*do{*/
@@ -81,6 +83,7 @@ public class menu {
                     System.out.println("La suma del nº binario " + bin1 + " y " + bin2 + " es: " + sumaBinaria(bin1, bin2));
                     cont2++;
                     break;
+                /*4.- B */
                 case 3:
                     System.out.println("Ingrese la base: ");
                     int base = sc.nextInt();
