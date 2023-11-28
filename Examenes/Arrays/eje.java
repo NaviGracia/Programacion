@@ -1,4 +1,4 @@
-package actividad;
+package eje;
 
 import java.util.Arrays;
 import java.util.Scanner;
