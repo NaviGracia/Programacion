@@ -1,4 +1,4 @@
-package eje;
+
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -44,7 +44,7 @@ public class eje {
             for(int contColum = 0; contColum<columnas; contColum++){
                 if (arrayBidimensional[contFilas][contColum]==eliminarValor) {
                     int[][] arrayEliminado;
-                    arrayEliminado = new int[-1][col]
+                    arrayEliminado = new int[-1][col];
                 }
             }
         }
