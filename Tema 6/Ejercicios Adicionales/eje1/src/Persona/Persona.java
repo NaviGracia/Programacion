@@ -3,8 +3,9 @@ package Persona;
 public class Persona {
 
     /*Atributo de objeto constante */
-    private final String sexo = "H"; 
-    
+    private final char sexoVariableConstante = 'H'; 
+    private char sexo=sexoVariableConstante;
+    //private char sexo;
     /*Atributos de objeto */
     private String nombre = "";
     private int edad = 0;
@@ -13,6 +14,27 @@ public class Persona {
 
     /*Atributo de clase */
     private int instanciasCreadas = 0;
+
+    /* Constructores */
+    Persona() { 
+        instanciasCreadas++;
+    }
+
+    Persona(String nombre, int edad, char sexo) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.sexo = sexo;
+        instanciasCreadas++;
+    }
+
+    Persona(String nombre, int edad, char sexo, double peso, double altura) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.sexo = sexo;
+        this.peso = peso;
+        this.altura = altura;
+        instanciasCreadas++;
+    }
 
     /*Getters y Setters de atributos de objeto */
     public String getNombre() {
@@ -44,4 +66,6 @@ public class Persona {
     public int getInstanciasCreadas() {
         return instanciasCreadas;
     }
+
+    
 }
