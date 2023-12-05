@@ -56,12 +56,12 @@ public class Viajero {
     }
 
     Viajero(){
-        dni = "000000000A";
-        nombre = "Ivan";
-        apellidos = "Garcia";
-        nacionalidad = "español de España";
-        direccion = "micasamipuerta 73";
-        instanciasCreadas++;
+        this.dni = "000000000A";
+        this.nombre = "Ivan";
+        this.apellidos = "Garcia";
+        this.nacionalidad = "español de España";
+        this.direccion = "micasamipuerta 73";
+        this.instanciasCreadas++;
     }
 
     void getInfo(){
