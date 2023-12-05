@@ -86,9 +86,5 @@ public class Viajero {
         }
         System.out.println(instanciasCreadas);
     }
-/*Comprobaciones a través del main */
-    public static void main(String[] args) {
-        Viajero v1 = new Viajero();
-        v1.getInfo();
-    }
+    
 }
