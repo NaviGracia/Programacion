@@ -3,7 +3,7 @@ package persona.viajero;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class Num_Aleatorio {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random num = new Random();
