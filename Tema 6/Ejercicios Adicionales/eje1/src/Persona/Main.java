@@ -1,6 +1,20 @@
 package Persona;
 
+import java.util.Scanner;
+
 public class Main {
-    Persona p1 = new Persona();
-    Persona p2 = new Persona("Ivan", 23, 1.8);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el nombre:");
+        String nombre = sc.nextLine();
+        System.out.println("Introduce el edad:");
+        int edad = sc.nextInt();
+        System.out.println("Introduce el sexo:");
+        char sexo = sc.next().charAt(0);
+        System.out.println("Introduce el peso:");
+        double peso = sc.nextDouble();
+        System.out.println("Introduce la altura:");
+        double altura = sc.nextDouble();    
+    }
+    
 }
