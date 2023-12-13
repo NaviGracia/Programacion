@@ -8,9 +8,9 @@ public class Persona {
 
     /*Atributos de objeto */
     private String nombre = "Ivan";
-    private int edad = 1;
-    private double peso = 10;
-    private double altura = 10;
+    private int edad = 18;
+    private double peso = 85;
+    private double altura = 1.88;
 
     /*Atributo de clase */
     private int instanciasCreadas = 0;
@@ -99,8 +99,8 @@ public class Persona {
         return sexo;
     }
 
-    int calcularIMC(int peso, int altura){
-        int imc = peso/(altura*2);
+    int calcularIMC(double peso, double altura){
+        double imc = peso/(altura*2);
         if (imc<20) {
             final int debajoPesoIdeal = -1;
             return debajoPesoIdeal;
@@ -112,6 +112,8 @@ public class Persona {
             return pesoIdeal;
         }
     }
-
+    public String toString() {
+        return "Paciente: " + nombre + "\n Edad: " + edad + " años" + "\n Sexo: " + sexo + "\n Peso: " + peso + " kg" + "\n Altura: " + altura + " metros";
+    }
 }
 
