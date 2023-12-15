@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
+
+
+
         //Pidiendo datos de la persona
         System.out.println("Introduce el nombre:");
         String nombre = sc.nextLine();
@@ -18,7 +22,7 @@ public class Main {
         double altura = sc.nextDouble();
         //Creando 3 Personas
         Persona p1 = new Persona(nombre, edad, sexo, peso, altura);
-        Persona p2 = new Persona("", 0, 'H');
+        Persona p2 = new Persona("Stevan", 40, 'H');
         p2.setPeso(70);
         p2.setAltura(1.4);
         Persona p3 = new Persona();

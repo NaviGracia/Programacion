@@ -11,6 +11,9 @@ public class Persona {
     private int edad = 18;
     private double peso = 85;
     private double altura = 1.88;
+    private String dni;
+
+
 
     /*Atributo de clase */
     private int instanciasCreadas = 0;
@@ -18,12 +21,14 @@ public class Persona {
     /* Constructores */
     Persona() { 
         instanciasCreadas++;
+        this.dni = generaDNI();
     }
 
     Persona(String nombre, int edad, char sexo) {
         this.nombre = nombre;
         this.edad = edad;
         this.sexo = comprobarSexo(sexo, sexoVariableConstante);
+        this.dni = generaDNI();
         instanciasCreadas++;
     }
 
@@ -33,6 +38,7 @@ public class Persona {
         this.sexo = comprobarSexo(sexo, sexoVariableConstante);
         this.peso = peso;
         this.altura = altura;
+        this.dni = generaDNI();
         instanciasCreadas++;
     }
 
@@ -77,6 +83,14 @@ public class Persona {
         this.sexo = comprobarSexo(sexo, sexoVariableConstante);
     }
 
+    public String getDni() {
+        return generaDNI();
+    }
+
+    public void setDni(String dni) {
+        this.dni = generaDNI();
+    }
+
     /* get del atributo de clase */
     public int getInstanciasCreadas() {
         return instanciasCreadas;
@@ -112,8 +126,64 @@ public class Persona {
             return pesoIdeal;
         }
     }
+    
     public String toString() {
-        return "Paciente: " + nombre + "\n Edad: " + edad + " años" + "\n Sexo: " + sexo + "\n Peso: " + peso + " kg" + "\n Altura: " + altura + " metros";
+        return "Paciente: " + nombre + "\n Edad: " + edad + " años" + "\n Sexo: " + sexo + "\n Peso: " + peso + " kg" + "\n Altura: " + altura + " metros" + "\n DNI: " + dni;
+    }
+
+    private String generaDNI(){
+        int numDNI = (int)(Math.random()*(99999999-10000000));
+        String dni = String.valueOf(numDNI);
+        int divLetraDNI = numDNI%23;
+        switch(divLetraDNI){
+            case 0: dni = dni + "T";
+            break;
+            case 1: dni = dni + "R";
+            break;
+            case 2: dni = dni + "W";
+            break;
+            case 3: dni = dni + "A";
+            break;
+            case 4: dni = dni + "G";
+            break;
+            case 5: dni = dni + "M";
+            break;
+            case 6: dni = dni + "Y";
+            break;
+            case 7: dni = dni + "F";
+            break;
+            case 8: dni = dni + "P";
+            break;
+            case 9: dni = dni + "D";
+            break;
+            case 10: dni = dni + "X";
+            break;
+            case 11: dni = dni + "B";
+            break;
+            case 12: dni = dni + "N";
+            break;
+            case 13: dni = dni + "J";
+            break;
+            case 14: dni = dni + "Z";
+            break;
+            case 15: dni = dni + "S";
+            break;
+            case 16: dni = dni + "Q";
+            break;
+            case 17: dni = dni + "V";
+            break;
+            case 18: dni = dni + "H";
+            break;
+            case 19: dni = dni + "L";
+            break;
+            case 20: dni = dni + "C";
+            break;
+            case 21: dni = dni + "A";
+            break;
+            case 22: dni = dni + "E";
+            break;
+        }
+        return dni;
     }
 }
 
