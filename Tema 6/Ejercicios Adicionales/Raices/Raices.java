@@ -29,19 +29,19 @@ public class Raices {
     }
 
     boolean tieneRaices(){
-        boolean dosRaices = false;
         if (getDiscriminante()>0) {
-            dosRaices=true;
+            return true;
+        } else{
+            return false;
         }
-        return dosRaices;
     }
 
     boolean tieneRaiz(){
-        boolean unaRaiz = false;
         if (getDiscriminante()==0) {
-            unaRaiz=true;
+            return true;
+        } else{
+            return false;
         }
-        return unaRaiz;
     }
 
     void calcular(){
