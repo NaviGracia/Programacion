@@ -49,7 +49,7 @@ public class Password {
         int numMin = 0;
         int numMaj = 0;
         int numNum = 0;
-        for(int pos = 1; pos < password.length(); pos++){
+        for(int pos = 0; pos < password.length(); pos++){
             switch (password.charAt(pos)) {
                 case 'a': numMin++;
                 break;
@@ -175,7 +175,7 @@ public class Password {
                 break;
             }
         }
-        if (numMaj>1&&numMin>2&&numNum>5) {
+        if (numMaj>2&&numMin>1&&numNum>5) {
             return true;
         } else{
             return false;
