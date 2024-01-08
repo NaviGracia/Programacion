@@ -9,8 +9,10 @@ public class Main {
         System.out.println("Ingrese la longitud de la contraseña:");
         int lon = sc.nextInt();
         Password p2 = new Password(lon, null);
+        System.out.println();
         System.out.println(p1.getpassword());
-        System.out.println(p1.esFuerte(lon, null, null, null, null));
+        System.out.println(p1.esFuerte(p1.getpassword()));
         System.out.println(p2.getpassword());
+        System.out.println(p2.esFuerte(p2.getpassword()));
     }
 }
