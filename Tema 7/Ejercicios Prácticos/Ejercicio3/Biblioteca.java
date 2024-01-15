@@ -39,6 +39,6 @@ public class Biblioteca {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Codigo: " + codigo + "\n Titulo: " + titulo + "\n Año de Publicación: " + añoPublicación;
     }
 }

@@ -8,5 +8,8 @@ public class Revistas extends Biblioteca{
         this.numero = numero;
     }
 
-    
+    @Override
+    public String toString() {
+        return super.toString() + "\n Numero: "+ numero;
+    }
 }
