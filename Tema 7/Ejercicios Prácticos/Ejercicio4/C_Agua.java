@@ -1,9 +1,11 @@
 package Ejercicio4;
 
-public class C_Agua {
+public class C_Agua extends Congelados{
     double salinidad;
 
-    public C_Agua(double salinidad) {
+    public C_Agua(int numLote, String fechaEnvasado, String fechaCaducidad, String paisOrigen,
+            int temperaturaRecomendada, double salinidad) {
+        super(numLote, fechaEnvasado, fechaCaducidad, paisOrigen, temperaturaRecomendada);
         this.salinidad = salinidad;
     }
 
