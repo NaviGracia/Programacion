@@ -1,9 +1,9 @@
 package Ejercicio6;
 
-public class Loro extends Aves implements PuedeCaminar, PuedeVolar{
+public class Loro extends Aves implements PuedeVolar{
     @Override
     public void puedeCaminar() {
-        System.out.println("d");
+        System.out.println("El loro camina");
     }
 
     @Override

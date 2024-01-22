@@ -1,15 +1,13 @@
 package Ejercicio6;
 
-public class Gato extends Mamifero implements PuedeCaminar, PuedeNadar{
+public class Gato extends Felino{
     @Override
     public void puedeCaminar() {
-        System.out.println("Halo");
+        System.out.println("El gato camina");
     }
 
     @Override
     public void puedeNadar() {
-        System.out.println("Nado");
+        System.out.println("El gato nada");
     }
-    
-
 }
