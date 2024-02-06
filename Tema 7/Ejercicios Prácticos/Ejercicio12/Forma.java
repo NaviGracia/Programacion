@@ -1,4 +1,4 @@
-package Ejercicio11;
+package Ejercicio12;
 
 public abstract class Forma {
     @Override
