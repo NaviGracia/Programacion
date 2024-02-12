@@ -1,8 +1,8 @@
-public final class Juego{
+public class Juego{
     private String titulo = "Sin título";
     private String fabricante = "Desconocido";
     private int anyo = 1970;
-    private int totalJuegos = 1;
+    private int totalJuegos = 0;
 
     public Juego() {}
 
@@ -10,7 +10,7 @@ public final class Juego{
         this.titulo = titulo;
         this.fabricante = fabricante;
         this.anyo = comprobarAnyo(anyo);
-        totalJuegos += 1;
+        totalJuegos = totalJuegos + 1;
     }
     
     public String getTitulo() {
