@@ -1,6 +1,8 @@
 package Ejercicio2;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Ejercicio2 {
@@ -24,27 +26,50 @@ public class Ejercicio2 {
                     break;
                 case 3:
                     System.out.println("Introduzca el Nº que desea modificar:");
-                    int numRemplazar = sc.nextInt();
+                    int numReemplazar = sc.nextInt();
+                    int pos = arrayEnteros.indexOf(numReemplazar);
+                    System.out.println("Introduzca el Nº nuevo:");
+                    int sust = sc.nextInt();
+                    arrayEnteros.set(pos, sust);
                     break;
                 case 4:
-                    
+                    System.out.println("Introduzca el Nº a eliminar:");
+                    int elimi = sc.nextInt();
+                    arrayEnteros.remove(arrayEnteros.indexOf(elimi));
                     break;
                 case 5:
-                    
+                    System.out.println("Introduzca la posicion:");
+                    int posicion = sc.nextInt();
+                    try {
+                        arrayEnteros.get(posicion);   
+                    } catch (Exception e) {
+                        // TODO: handle exception
+                        System.out.println("Error");
+                        break;
+                    }
+                    System.out.println("Introduzca el Nº:");
+                    int n = sc.nextInt();
+                    arrayEnteros.add(posicion, n);
                     break;
                 case 6:
-                    
+                    try {
+                        System.out.println("Lista de Valores:");
+                        for(int cont = 0; cont <= arrayEnteros.size(); cont++){
+                            System.out.println(arrayEnteros.get(cont));
+                        }    
+                    } catch (Exception e) {
+                        // TODO: handle exception
+                        System.out.println("La lista está vacía");
+                    }
                     break;
                 case 7:
-                    
+                    Collections.sort(arrayEnteros);
+                    System.out.println("Lista Ordenada de menor a mayor");
                     break;
                 case 8:
-                    
+                    Comparator<Integer> comparador = Collections.reverseOrder();
+                    Collections.sort(arrayEnteros, comparador);
                     break;
-                case 9:
-                    
-                    break;
-            
                 default:
                     System.out.println("Nº Incorrecto");
                     break;
