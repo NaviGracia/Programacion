@@ -17,4 +17,10 @@ public class Alumno {
         return nota;
     }
 
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return "Alumno: " + nombre + "          Nota: " + nota;
+    }
+
 }
