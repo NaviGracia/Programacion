@@ -65,6 +65,6 @@ public class Persona {
     @Override
     public String toString() {
         // TODO Auto-generated method stub
-        return "DNI: " + dni + "\n Nombre: " + nombre + "\n Apellidos: " + apellido1 + " " + apellido2 + "\n Edad: " + edad + "\n Peso: " + peso + "Sexo: " + sexo;
+        return "DNI: " + dni + "\n Nombre: " + nombre + "\n Apellidos: " + apellido1 + " " + apellido2 + "\n Edad: " + edad + "\n Peso: " + peso + "\n Sexo: " + sexo;
     }
 }
