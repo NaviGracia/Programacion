@@ -1,0 +1,13 @@
+10.1. ¿Qué tipo de excepciones representa RuntimeException?
+- Representa aquellas excepciones que ocurren en el funcionamiento normal en la mv de Java.
+
+10.2. ¿Qué tipo de excepción se producirá al ejecutarse int n = Integer.parseInt("a");?
+- La excepción que producirá será del tipo java.lang.NumberFormatException. 
+
+10.3. Describe el comportamiento del último código del apartado 10.4.1 y la salida que se 
+hubiese obtenido si se añadiera un bloque catch justo a continuación del bloque try para 
+capturar excepciones del tipo java.lang.Exception y se repitieran las mismas entradas.
+- Al colocarse antes que el otro catch, aparecerá un error, ya que la excepción ya habrá sido controlada por el catch añadido.
+
+10.4. ¿Es posible capturar excepciones de tipo Throwable? Justifica tu respuesta.
+- 
