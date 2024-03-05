@@ -1,12 +1,46 @@
 package Ejercicio1;
 
+import java.util.HashMap;
 import java.util.Scanner;
+
+import java.util.Iterator;
 
 public class agenda {
     static Scanner sc = new Scanner(System.in);
-    //  static 
+    static HashMap<Integer, String> agenda = new HashMap<>(); 
+    static HashMap<String, Integer> agendaAlReves = new HashMap<>();
+    static int numCont;
 
-     public static void menuAcciones(){
+    public static void agendarContacto(){
+        System.out.println("Inserte el nº de telefono:");
+        int numero = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Inserte el nombre:");
+        String nombre = sc.nextLine();
+        agenda.put(numero, nombre);
+        agendaAlReves.put(nombre, numero);
+        numCont+=1; 
+    }
+
+    public static void consultarTelefono(){
+        System.out.println("Inserte el nombre del contacto");
+        String nombreBuscar = sc.nextLine();
+        System.out.println("Nombre: " + nombreBuscar + "\n Teléfono: " + agendaAlReves.get(nombreBuscar));
+    }
+
+    public static void eliminarPersona(String dni){
+        System.out.println();
+    }
+
+    public static void ordenarPersona(){
+        System.out.println();
+    }
+
+    public static void listarPersona(){
+        
+    }
+
+    public static void main(String[] args) {
         int eleccion;
         do {
             System.out.println("Menú Acciones: ");
@@ -25,13 +59,13 @@ public class agenda {
             sc.nextLine();
             switch (eleccion) {
                 case 1:
-                    
+                    agendarContacto();
                     break;
                 case 2:
-                    
+                    System.out.println(agenda.size()); 
                     break;
                 case 3:
-                    
+                    consultarTelefono();
                     break;
                 case 4:
                 
@@ -55,29 +89,9 @@ public class agenda {
                 
                     break;
                 case 11:
-                
+                    System.out.println("Programa Finalizado");
                     break;
             }
         } while (eleccion != 11);
-     }
-
-    public static void agendarContacto(String dni){
-        System.out.println();
-    }
-
-    public static void eliminarPersona(String dni){
-        System.out.println();
-    }
-
-    public static void ordenarPersona(){
-        System.out.println();
-    }
-
-    public static void listarPersona(){
-        
-    }
-
-    public static void main(String[] args) {
-        menuAcciones();
     }
 }
