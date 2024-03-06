@@ -1,3 +1,4 @@
+ACTIVIDADES PROPUESTAS:
 10.1. ¿Qué tipo de excepciones representa RuntimeException?
 - Representa aquellas excepciones que ocurren en el funcionamiento normal en la mv de Java.
 
@@ -10,4 +11,40 @@ capturar excepciones del tipo java.lang.Exception y se repitieran las mismas ent
 - Al colocarse antes que el otro catch, aparecerá un error, ya que la excepción ya habrá sido controlada por el catch añadido.
 
 10.4. ¿Es posible capturar excepciones de tipo Throwable? Justifica tu respuesta.
-- 
+- Si, ya que hay excepciones de Throwable que necesitan ser capturadas y manejadas correctamente.
+
+10.6. Describe las diferencias entre throws y throw. ¿Pueden coexistir en el mismo método?
+- Si, ya que throw puede estar dentro del método y throws fuera de este.
+
+EJERCICIOS PROPUESTOS:
+1. ¿Describe la diferencia existente entre excepciones checked y unchecked?
+- Las checked necesitan ser controladas mientras que en las unchecked no.
+
+2. ¿Es posible crear una excepcion personalizada con más miembros que los que tiene la clase base?
+- Si.
+
+3. Investiga sobre el empleo de multicatch y final rethrow. Propón un programa de ejemplo de uso en el que se pueda comprobar su funcionamiento.
+-  catch(Exception e | Exception f){
+    System.out.println("Ha habido una excepción");
+}
+
+4. ¿Es correcto el fragmento de código siguiente?
+try{
+
+} finally{
+
+}
+- Si.
+
+5. ¿En qué situaciones se podrán capturar excepciones del tipo IllegalArgumenException 
+según el siguiente código?
+try{
+
+}catch (Exception ex1) {
+
+}catch (IllegalArgumentException ex2) {
+
+}
+
+-Nunca, ya que se habrán capturado en el catch anterior, para arreglarlo, habría que cambiar el orden de las excepciones.
+
