@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.util.Scanner;
 
 public class LecturaArchivo {
-    static public void Escritura(File file1, String ruta, String texto) throws Exception{
+    static public void Escritura(File file1, String texto) throws Exception{
         FileWriter fw = new FileWriter(file1);
         BufferedWriter bw = new BufferedWriter(fw);
         bw.write(texto);
@@ -16,8 +16,8 @@ public class LecturaArchivo {
         fw.close();
     }
 
-    static public void Mostrar(String ruta){
-        FileReader fr = new FileReader(ruta); //El fallo esta aqui
+    static public void Mostrar(File file1){
+        FileReader fr = new FileReader(file1); //El fallo esta aqui
         BufferedReader br = new BufferedReader(fr);
         System.out.println(br.readLine());
         br.close();
@@ -31,8 +31,8 @@ public class LecturaArchivo {
             File file1 = new File(ruta);
             System.out.println("Inserte el texto que desea escribir en el archivo:");
             String texto = sc.nextLine();
-            Escritura(file1, ruta, texto);
-            Mostrar(ruta);
+            Escritura(file1, texto);
+            Mostrar(file1);
             System.out.println("Programa Finalizado");   
         } catch (Exception e) {
             // TODO: handle exception
